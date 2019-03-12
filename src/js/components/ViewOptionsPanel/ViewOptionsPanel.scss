@@ -1,0 +1,18 @@
+.view_options_container{
+    display: flex;
+    margin: 10px auto 10px auto;
+}
+.view_option{
+    background: lightgray;
+    padding: 5px 5px 5px 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    cursor: pointer;
+}
+.view_current_option{
+    background: gray;
+    padding: 5px 5px 5px 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    cursor: pointer;
+}

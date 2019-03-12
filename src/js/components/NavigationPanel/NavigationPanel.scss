@@ -1,0 +1,16 @@
+.nav_panel_container{
+    width: 100%;
+    display: flex;
+}
+.styles.paginationContainer_item{
+    background-color: aqua;
+}
+.page_button_active{
+    background: lightgray;
+    cursor: pointer;
+    padding: 5px 5px 5px 5px;
+    margin: 3px 3px 3px 3px;
+}
+.page_button_disabled{
+    background: gray;
+}
