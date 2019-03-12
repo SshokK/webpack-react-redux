@@ -25,16 +25,16 @@ class ViewOptionsPanel extends React.Component {
 
     return (
       <div className={styles.view_options_container}>
-          {DEFAULT_VIEW_OPTIONS.map(option => {
-            return (
-              <div 
-                key={option.key} 
-                onClick={this.handleViewOptionChange.bind(this, DEFAULT_PAGE, option, onViewOptionChange)} 
-                className={option.key === currentViewOption.key ? styles.view_current_option : styles.view_option}>
-                {option.name}
-              </div>
-            )
-          })}
+        {DEFAULT_VIEW_OPTIONS.map(option => {
+          return (
+            <div 
+              key={option.key} 
+              onClick={this.handleViewOptionChange.bind(this, DEFAULT_PAGE, option, onViewOptionChange)} 
+              className={option.key === currentViewOption.key ? styles.view_current_option : styles.view_option}>
+              {option.name}
+            </div>
+          )
+        })}
       </div>
     )
   }

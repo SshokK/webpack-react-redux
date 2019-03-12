@@ -27,24 +27,23 @@ class TodoList extends React.Component {
 
     const finishPos = currentViewOption.key * currentPage;
     const startPos = finishPos - currentViewOption.key;
-
+  
     return (
       <div className={styles.todo_container}>
         <div className={styles.todo_header}>Todo List</div>
         <ViewOptionsPanel
           currentViewOption={currentViewOption}
           page={currentPage}
-          numPages={this.countPages(todos, currentViewOption)}
           onViewOptionChange={(page, option) => this.onViewOptionChange(page, option, fetchData)}/>
         {todos ? todos.map((todo, todoNum) => {
           if (todoNum >= startPos && todoNum < finishPos) {
             return (
               <div key={todo.id} className={todo.completed ? styles.todo_item_completed : styles.todo_item_incompleted}>
                 <div className={todo.completed ? styles.todo_id_column_completed : styles.todo_id_column_incompleted}>
-                    {todo.id}
+                  {todo.id}
                 </div>    
                 <div className={styles.todo_title_column}>
-                    {todo.title}
+                  {todo.title}
                 </div>
               </div>   
             )    
